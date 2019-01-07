@@ -8,8 +8,8 @@ with a text that reads like this: *I was called with 'this/is/a/test/url'*
 
 
 ## usage
-
-You can build the image via `./build.sh`
+You can compile the go application via `./compile` and
+build the docker image via `./build.sh`
 
 You can start the service with `./run.sh` - if it
 was not build previously it pulls the image from 
