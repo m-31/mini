@@ -1,6 +1,6 @@
 #!/bin/sh
-#go build mini.go
-CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o mini mini.go
+set -eo pipefail
 
+echo "building local docker image for mini application"
 docker build -t messier31/mini .
-
+echo "docker build finished"
